@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TareaRecyclerView</string>
+    <string name="card_nombre">Perrito</string>
+    <string name="card_boto">5</string>
+</resources>
