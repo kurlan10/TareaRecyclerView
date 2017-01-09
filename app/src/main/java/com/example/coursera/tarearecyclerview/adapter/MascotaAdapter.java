@@ -1,4 +1,4 @@
-package com.example.coursera.tarearecyclerview;
+package com.example.coursera.tarearecyclerview.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.coursera.tarearecyclerview.Mascota;
+import com.example.coursera.tarearecyclerview.R;
 
 import java.util.ArrayList;
 

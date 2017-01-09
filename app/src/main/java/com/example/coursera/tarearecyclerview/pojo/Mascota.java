@@ -1,4 +1,4 @@
-package com.example.coursera.tarearecyclerview;
+package com.example.coursera.tarearecyclerview.pojo;
 
 /**
  * Created by Quality on 05/06/2016.
