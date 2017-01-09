@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.coursera.tarearecyclerview.pojo.Mascota;
 import com.example.coursera.tarearecyclerview.R;
+import com.example.coursera.tarearecyclerview.pojo.Mascota;
 
 import java.util.ArrayList;
 
@@ -28,7 +28,7 @@ public class MascotaPerfilAdapter extends  RecyclerView.Adapter<MascotaPerfilAda
 
     @Override
     public MascotaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascota,parent,false);
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascota_perfil,parent,false);
         return new MascotaViewHolder(v);
     }
 
@@ -36,10 +36,9 @@ public class MascotaPerfilAdapter extends  RecyclerView.Adapter<MascotaPerfilAda
     public void onBindViewHolder(MascotaViewHolder holder, int position) {
         final Mascota mascota= mascotas.get(position);
         holder.imgFoto.setImageResource(mascota.getFoto());
-        holder.tvNombre.setText(mascota.getNombre());
         holder.tvVoto.setText(mascota.getVoto()+"");
 
-        holder.imgNombre.setOnClickListener(new View.OnClickListener() {
+        holder.imgVoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(activity, "Diste like a la "+mascota.getNombre() , Toast.LENGTH_SHORT).show();
@@ -55,16 +54,14 @@ public class MascotaPerfilAdapter extends  RecyclerView.Adapter<MascotaPerfilAda
     public static class MascotaViewHolder extends RecyclerView.ViewHolder{
 
         private ImageView imgFoto;
-        private TextView tvNombre;
         private TextView tvVoto;
-        private ImageView imgNombre;
+        private ImageView imgVoto;
 
         public MascotaViewHolder(View itemView) {
             super(itemView);
-            imgFoto     = (ImageView)itemView.findViewById(R.id.imgFoto);
-            tvNombre    = (TextView)itemView.findViewById(R.id.tvNombre);
-            tvVoto      = (TextView)itemView.findViewById(R.id.tvVoto);
-            imgNombre   = (ImageView)itemView.findViewById(R.id.imgNombre);
+            imgFoto     = (ImageView)itemView.findViewById(R.id.imgFotoPerfil);
+            tvVoto      = (TextView)itemView.findViewById(R.id.tvVotoPerfil);
+            imgVoto   = (ImageView)itemView.findViewById(R.id.imgVotoPerfil);
         }
     }
 }

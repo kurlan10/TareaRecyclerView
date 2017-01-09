@@ -2,4 +2,14 @@
     <string name="app_name">TareaRecyclerView</string>
     <string name="card_nombre">Perrito</string>
     <string name="card_boto">5</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca">Acerca De</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtMensaje">Mensaje</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="textAcercade">Alumno de Coursera</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
